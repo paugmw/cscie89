@@ -3,7 +3,7 @@
 import torch
 import torch.nn as nn
 
-from hardware_check import get_device
+from fashion_train import FashionCNN, get_device
 
 
 def evaluate_model(model, test_loader, class_names=None, device=None):
@@ -41,7 +41,6 @@ def evaluate_model(model, test_loader, class_names=None, device=None):
 
 if __name__ == "__main__":
     from fashion_dataloaders import get_dataloaders
-    from fashion_train import FashionCNN
 
     _, _, test_loader, class_names = get_dataloaders()
     device = get_device()

@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+datasets/
+fashion_cnn.pt
+fashion_accuracy.png
